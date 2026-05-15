@@ -2,77 +2,49 @@
 
 This repository contains data and code for a study of prestige stratification and faculty placement patterns within transportation focused civil and environmental engineering departments in the United States.
 
-The project links doctoral training institutions to first academic placements and analyzes how prestige tiers shape hiring outcomes across the academic labor market.
+## Data
 
-## Data Description
 ### `data_transportation_faculty.xlsx`
 
-The Excel file contains **two sheets**:
+The Excel file contains two sheets:
 
-#### Sheet 1: `People`
-This is the **primary analysis dataset**.  
-Each row corresponds to a single faculty member in the sample.
-
-Variables include:
+**Sheet 1: `People`** - Primary analysis dataset. Each row is one faculty member.
 
 | Column | Description |
-|------|------------|
-| `Name` | Faculty member name (deidentified)|
-| `Rank` | Current academic rank (e.g., Assistant, Associate, Full) |
-| `Current_Institution` | Faculty member’s current academic institution |
-| `First_Hire` | Institution of first tenure-track academic appointment |
-| `UG_Institution` | Undergraduate degree granting institution |
+|---|---|
+| `Name` | Faculty member name (deidentified) |
+| `Rank` | Current academic rank |
+| `Current_Institution` | Current academic institution |
+| `First_Hire` | Institution of first tenure-track appointment |
+| `UG_Institution` | Undergraduate institution |
 | `UG_Country` | Country of undergraduate training |
-| `PhD_Institution` | PhD degree granting institution |
+| `PhD_Institution` | PhD institution |
 | `PhD_Country` | Country of PhD training |
-| `PhD_Year` | Year PhD degree was awarded |
-| `Postdoc_Institution` | Postdoctoral institution, if applicable|
+| `PhD_Year` | Year PhD was awarded |
+| `Postdoc_Institution` | Postdoctoral institution, if applicable |
 | `Postdoc_Country` | Country of postdoctoral training |
 
-**First-hire convention:**  
-If `First_Hire` is blank, the faculty member’s **current institution is treated as their first hire institution**. This reflects cases where no prior tenure-track appointment could be identified from public records.
+**First-hire convention:** If `First_Hire` is blank, current institution is treated as the first hire.
 
-This sheet is the sole input used for faculty-level placement analyses.
+**Sheet 2: `University Rankings`** - Institution-level prestige rankings used to construct tier classifications.
 
-**Postdoc columns:**
-Postdoctoral training is recorded only when explicitly identified as a postdoctoral appointment in public records. Other intermediate roles, including research scientist, visiting, or non tenure track research faculty positions, are not coded as postdoctoral training. 
-
-Multiple postdoctoral appointments are separated by a "+"
-
----
-
-#### Sheet 2: `University Rankings`
-This sheet contains **institution-level prestige information** used to construct prestige tiers and comparative rankings.
-
-It includes mappings from university names to prestige indicators used in the analysis (e.g., tier classifications or ranking groupings). These rankings are merged with the `People` sheet within the analysis notebook to compute prestige transitions and placement concentration measures.
-
-This sheet does not represent individuals and contains no faculty-level records.
-
-
-## Analysis Notebook
+## Analysis
 
 ### `faculty_prestige_analysis.ipynb`
-A Jupyter notebook that reproduces the main analyses and figures in the paper, including:
 
-- Prestige tier construction and validation  
-- Placement transition matrices  
-- Placement concentration metrics by PhD institution  
-- Summary statistics and visualizations  
+A Jupyter notebook that reproduces the main analyses and figures. The notebook is fully reproducible using the provided Excel file.
 
-The notebook is designed to be fully reproducible using the provided Excel file.
+## Data Sources
 
-## Data Sources and Scope
-
-- Data are compiled from publicly available web sources as of January 2026  
-- The sample focuses on transportation oriented faculty within civil engineering departments  
-- Only tenure track academic placements are included in the primary analyses  
+- Data compiled from publicly available web sources as of January 2026
+- Sample focuses on transportation oriented faculty within civil engineering departments
+- Only tenure track academic placements are included
 
 No private, proprietary, or confidential data are used.
 
-
 ## Reproducibility
 
-All results in the associated paper can be reproduced using the anonymized dataset and analysis notebook in this repository. No proprietary or confidential data are used.
+All results can be reproduced using the anonymized dataset and analysis notebook. No proprietary data are used.
 
 ## License
 
