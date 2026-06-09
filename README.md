@@ -32,7 +32,12 @@ The Excel file contains two sheets:
 
 ### `faculty_prestige_analysis.ipynb`
 
-A Jupyter notebook that reproduces the main analyses and figures. The notebook is fully reproducible using the provided Excel file.
+A Jupyter notebook that reproduces the main analyses and figures. The notebook is fully reproducible using the provided Excel file. It covers:
+
+- the PhD-tier to first-hire-tier transition matrix, mobility summaries, and placement-concentration figures;
+- the ordered logit models of first-hire prestige and the model-implied predicted probabilities;
+- a robustness check under an alternative three-tier ranking scheme (manuscript Appendix A); and
+- a cohort-stratified robustness check showing the prestige gradient is stable across doctoral completion cohorts, with a likelihood-ratio test for a PhD-tier by cohort interaction (manuscript Appendix B).
 
 ## Data Sources
 
