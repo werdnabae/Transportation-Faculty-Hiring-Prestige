@@ -1,0 +1,19 @@
+# Build artifacts (regenerate by running the notebook)
+*.png
+
+# uv / virtual environments
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+
+# Manuscript files are intentionally NOT tracked in this code/data repo
+*.pdf
+*.aux
+*.log
+*.synctex.gz

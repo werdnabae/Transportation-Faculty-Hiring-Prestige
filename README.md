@@ -2,6 +2,21 @@
 
 This repository contains data and code for a study of prestige stratification and faculty placement patterns within transportation focused civil and environmental engineering departments in the United States.
 
+## Getting started
+
+This project uses [uv](https://docs.astral.sh/uv/) for environment and dependency management.
+
+```bash
+# 1. Install uv (https://docs.astral.sh/uv/getting-started/installation/)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# 2. Create the environment and install dependencies (uv reads pyproject.toml)
+uv sync
+
+# 3. Launch the analysis notebook
+uv run jupyter lab faculty_prestige_analysis.ipynb
+```
+
 ## Data
 
 ### `data_transportation_faculty.xlsx`
@@ -50,6 +65,18 @@ No private, proprietary, or confidential data are used.
 ## Reproducibility
 
 All results can be reproduced using the anonymized dataset and analysis notebook. No proprietary data are used.
+
+## Related repository
+
+The companion repository [Transportation-Faculty-Geographic-Origins](https://github.com/werdnabae/Transportation-Faculty-Geographic-Origins) studies the geographic sourcing of the same faculty roster and shares the `data_transportation_faculty.xlsx` dataset.
+
+## Citation
+
+This work has been accepted for publication. Until the final citation and DOI are available, please cite it as:
+
+> Bae, A. J. (2026). Who Hires Whom? A Case Study of Prestige Stratification in U.S. Transportation Faculty Hiring. (Accepted; citation details forthcoming.)
+
+A machine-readable [`CITATION.cff`](CITATION.cff) is also provided.
 
 ## License
 
