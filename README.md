@@ -72,9 +72,24 @@ The companion repository [Transportation-Faculty-Geographic-Origins](https://git
 
 ## Citation
 
-This work has been accepted for publication. Until the final citation and DOI are available, please cite it as:
+If you use this dataset or code, please cite the associated paper:
 
-> Bae, A. J. (2026). Who Hires Whom? A Case Study of Prestige Stratification in U.S. Transportation Faculty Hiring. (Accepted; citation details forthcoming.)
+> Bae, A. J. (2026). Who Hires Whom? A Case Study of Prestige Stratification in U.S. Transportation Faculty Hiring. *Case Studies on Transport Policy*, 101885. https://doi.org/10.1016/j.cstp.2026.101885
+
+BibTeX:
+
+```bibtex
+@article{bae2026whohireswhom,
+  title   = {Who Hires Whom? A Case Study of Prestige Stratification in U.S. Transportation Faculty Hiring},
+  author  = {Bae, Andrew J.},
+  journal = {Case Studies on Transport Policy},
+  year    = {2026},
+  pages   = {101885},
+  issn    = {2213-624X},
+  doi     = {10.1016/j.cstp.2026.101885},
+  url     = {https://doi.org/10.1016/j.cstp.2026.101885}
+}
+```
 
 A machine-readable [`CITATION.cff`](CITATION.cff) is also provided.
 

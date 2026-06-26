@@ -10,5 +10,12 @@ preferred-citation:
   authors:
     - family-names: Bae
       given-names: "Andrew J."
+  journal: "Case Studies on Transport Policy"
+  publisher:
+    name: "Elsevier"
   year: 2026
-  notes: "Accepted for publication; full citation details (journal, volume, DOI) will be added once available."
+  month: 6
+  issn: "2213-624X"
+  start: 101885
+  doi: "10.1016/j.cstp.2026.101885"
+  url: "https://doi.org/10.1016/j.cstp.2026.101885"
